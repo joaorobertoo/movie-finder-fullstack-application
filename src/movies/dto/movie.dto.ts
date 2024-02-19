@@ -1,4 +1,5 @@
 import { IsString, IsNotEmpty, IsOptional } from 'class-validator';
+import { RatingDto } from './rating.dto';
 
 export class MovieDto {
   @IsNotEmpty()
@@ -24,4 +25,8 @@ export class MovieDto {
   @IsOptional()
   @IsString()
   readonly poster?: string;
+
+  @IsOptional()
+  @IsString()
+  ratings?: RatingDto[];
 }
