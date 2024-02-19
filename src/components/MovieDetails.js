@@ -24,9 +24,11 @@ const MovieDetails = ({ movie }) => {
       {movie.poster && (
         <img
           className="movie-poster"
-          src={movie.poster ? movie.poster : placeholder}
+          src={movie.poster !== "N/A" ? movie.poster : placeholder}
           alt={
-            movie.poster ? `Poster de ${movie.title}` : "Poster não disponível"
+            movie.poster !== "N/A"
+              ? `Poster de ${movie.title}`
+              : "Poster não disponível"
           }
         />
       )}

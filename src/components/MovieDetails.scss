@@ -34,9 +34,6 @@
       color: #334e68; // Azul mais suave para o texto
       margin: 5px 0;
   
-      &:first-of-type {
-        font-weight: bold;
-      }
     }
   
     img {
@@ -44,5 +41,9 @@
       max-width: 300px; // Mas limita a uma largura máxima
       border-radius: 4px;
       margin-top: 20px;
+    }
+
+    .ratings{
+      font-weight: bold;
     }
   }

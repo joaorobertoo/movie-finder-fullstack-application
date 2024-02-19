@@ -10,12 +10,18 @@ const MovieSearch = () => {
   const [movie, setMovie] = useState(null);
   const [searchDone, setSearchDone] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
 
   const handleInputChange = (event) => {
     setTitle(event.target.value);
   };
 
   const handleSearchClick = async () => {
+    if (!title.trim()) {
+      setErrorMessage("Por favor, insira um valor antes de buscar.");
+      return;
+    }
+    setErrorMessage("");
     try {
       setSearchDone(false);
       setLoading(true);
@@ -39,10 +45,12 @@ const MovieSearch = () => {
     setTitle("");
     setMovie(null);
     setSearchDone(false);
+    setErrorMessage("");
   };
 
   const handleFocus = () => {
     setSearchDone(false);
+    setErrorMessage("");
   };
 
   return (
@@ -54,6 +62,7 @@ const MovieSearch = () => {
         onResetClick={handleResetClick}
         onFocus={handleFocus}
       />
+      {errorMessage && <p className="empty-error-message">{errorMessage}</p>}
       {searchDone && !movie && (
         <p className="no-results-message">
           Nenhum resultado encontrado para "{title}".
