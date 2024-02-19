@@ -37,3 +37,14 @@
     transform: translateY(0px);
   }
 }
+
+.content p {
+  color: #000000;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto; // Aumenta a margem superior e inferior para centralizar verticalmente
+    padding: 10px;
+    width: 50%; // Ajusta para o tamanho desejado, baseado no wireframe
+    max-width: 700px; // Limita a largura máxima para evitar que fique muito larga em telas grandes
+}

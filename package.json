@@ -7,8 +7,13 @@
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.0.1",
     "@testing-library/user-event": "^14.1.1",
+    "@ui5/webcomponents-react": "^1.25.1",
+    "@ui5/webcomponents-react-base": "^1.25.1",
+    "node-sass": "^9.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^5.0.1",
+    "react-loader-spinner": "^6.1.6",
     "react-redux": "^8.0.1",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.0"
@@ -36,5 +41,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "proxy": "http://localhost:3000"
 }

@@ -1,0 +1,18 @@
+.header {
+    background-color: #4b49ee; // Um azul escuro como cor de fundo
+    color: #fff; // Um tom claro de texto para contraste
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+  
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
+    a {
+      color: #fff;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }

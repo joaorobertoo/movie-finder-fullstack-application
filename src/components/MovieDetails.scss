@@ -1,0 +1,48 @@
+.movie-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff; // Fundo branco para os detalhes do filme
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 800px; // Limita a largura máxima para melhor leitura
+  
+    .text-content {
+        display: flex;
+        flex-direction: column;
+        max-width: 70%; // Limita a largura do conteúdo de texto para dar espaço ao poster
+      }
+
+      .movie-poster {
+        width: 30%; // Define a largura do poster
+        max-width: 200px; // Limita a largura máxima do poster
+        height: auto; // Mantém a proporção da imagem
+        margin-left: 20px; // Adiciona espaço entre o texto e o poster
+        border-radius: 4px;
+      }
+
+    h2 {
+      color: #022c43; // Azul escuro para o título
+      margin: 10px 0;
+    }
+  
+    p {
+      font-size: 1em;
+      color: #334e68; // Azul mais suave para o texto
+      margin: 5px 0;
+  
+      &:first-of-type {
+        font-weight: bold;
+      }
+    }
+  
+    img {
+      width: 100%; // Ajusta a largura para ser responsiva
+      max-width: 300px; // Mas limita a uma largura máxima
+      border-radius: 4px;
+      margin-top: 20px;
+    }
+  }
