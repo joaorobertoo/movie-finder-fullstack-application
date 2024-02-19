@@ -7,6 +7,7 @@
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.0.1",
     "@testing-library/user-event": "^14.1.1",
+    "@ui5/webcomponents-fiori": "^1.22.0",
     "@ui5/webcomponents-react": "^1.25.1",
     "@ui5/webcomponents-react-base": "^1.25.1",
     "node-sass": "^9.0.0",

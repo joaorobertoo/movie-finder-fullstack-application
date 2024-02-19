@@ -3,6 +3,8 @@ import { createRoot } from 'react-dom/client';
 import { Provider } from 'react-redux';
 import { store } from './app/store';
 import App from './App';
+import ReactDOM from 'react-dom';
+import { ThemeProvider } from '@ui5/webcomponents-react';
 import reportWebVitals from './reportWebVitals';
 import './index.scss';
 
@@ -15,6 +17,13 @@ root.render(
       <App />
     </Provider>
   </React.StrictMode>
+);
+
+ReactDOM.render(
+  <ThemeProvider>
+    <App />
+  </ThemeProvider>,
+  document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function

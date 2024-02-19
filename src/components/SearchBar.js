@@ -1,5 +1,6 @@
 import React from "react";
 import "./SearchBar.scss";
+import { Button } from '@ui5/webcomponents-react';
 
 const SearchBar = ({
   onSearchChange,
@@ -22,6 +23,7 @@ const SearchBar = ({
       <button className="reset" onClick={onResetClick}>
         Reset
       </button>
+      <Button>Meu Botão UI5</Button>
     </div>
   );
 };
