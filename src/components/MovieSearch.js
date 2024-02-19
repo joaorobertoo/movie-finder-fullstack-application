@@ -17,6 +17,7 @@ const MovieSearch = () => {
   };
 
   const handleSearchClick = async () => {
+    setMovie(null);
     if (!title.trim()) {
       setErrorMessage("Please enter a value before searching.");
       return;
@@ -64,9 +65,7 @@ const MovieSearch = () => {
       />
       {errorMessage && <p className="empty-error-message">{errorMessage}</p>}
       {searchDone && !movie && (
-        <p className="no-results-message">
-          No results found for "{title}".
-        </p>
+        <p className="no-results-message">No results found for "{title}".</p>
       )}
       {loading && (
         <div className="spinner-container">
