@@ -1,0 +1,35 @@
+// Footer.scss
+.footer {
+    background-color: #4b49ee;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+  
+    position: sticky;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 100;
+
+   
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  
+
+    a {
+      color: #bbe1fa;
+      margin: 0 10px;
+      &:hover {
+        color: #0f4c75;
+      }
+    }
+  
+    @media (max-width: 600px) {
+      flex-direction: column;
+      a {
+        margin: 5px 0;
+      }
+    }
+  }
