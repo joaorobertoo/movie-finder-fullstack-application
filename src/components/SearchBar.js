@@ -1,6 +1,6 @@
 import React from "react";
 import "./SearchBar.scss";
-import { Button } from '@ui5/webcomponents-react';
+import { Button } from "@ui5/webcomponents-react";
 
 const SearchBar = ({
   onSearchChange,
@@ -14,16 +14,14 @@ const SearchBar = ({
       <input
         type="text"
         value={searchTerm}
-        onKeyPress={(e) => e.key === "Enter" && onSearchClick()}
         onChange={onSearchChange}
         onFocus={onFocus}
-        placeholder="Digite o título do filme"
+        placeholder="Insert the movie title"
       />
-      <button onClick={onSearchClick}>Buscar</button>
-      <button className="reset" onClick={onResetClick}>
+      <Button onClick={onSearchClick}>Search</Button>
+      <Button className="reset" onClick={onResetClick}>
         Reset
-      </button>
-      <Button>Meu Botão UI5</Button>
+      </Button>
     </div>
   );
 };

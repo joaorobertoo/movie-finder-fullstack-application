@@ -1,37 +1,35 @@
 // Footer.scss
 .footer {
-    background-color: #4b49ee; // Um tom de azul ainda mais escuro para o rodapé
-    color: #fff; // Um tom de azul claro para o texto que se destaca bem
-    padding: 20px;
+    background-color: #4b49ee;
+    color: #fff;
     text-align: center;
     font-size: 16px;
   
-    position: fixed; // Fixa o rodapé na parte inferior
+    position: sticky;
   left: 0;
   bottom: 0;
   width: 100%;
-  z-index: 100; // Garante que o rodapé fique acima de outros elementos
+  z-index: 100;
 
-    // Um design moderno pode incluir informação organizada em colunas para rodapés maiores
+   
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
   
-    // Se você tiver links no rodapé, aqui estão alguns estilos básicos
+
     a {
       color: #bbe1fa;
-      margin: 0 10px; // Mantém os links espaçados uniformemente
+      margin: 0 10px;
       &:hover {
         color: #0f4c75;
       }
     }
   
-    // Estilização para responsividade
     @media (max-width: 600px) {
       flex-direction: column;
       a {
-        margin: 5px 0; // Empilha os links verticalmente em telas menores
+        margin: 5px 0;
       }
     }
   }

@@ -18,7 +18,7 @@ const MovieSearch = () => {
 
   const handleSearchClick = async () => {
     if (!title.trim()) {
-      setErrorMessage("Por favor, insira um valor antes de buscar.");
+      setErrorMessage("Please enter a value before searching.");
       return;
     }
     setErrorMessage("");
@@ -65,7 +65,7 @@ const MovieSearch = () => {
       {errorMessage && <p className="empty-error-message">{errorMessage}</p>}
       {searchDone && !movie && (
         <p className="no-results-message">
-          Nenhum resultado encontrado para "{title}".
+          No results found for "{title}".
         </p>
       )}
       {loading && (

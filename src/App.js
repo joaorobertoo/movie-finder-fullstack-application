@@ -6,15 +6,17 @@ import Header from "./components/common/Header";
 
 function App() {
   return (
-    <div>
-      <Header />
-      <div className="content">
-        <p>
-          Aplicação para buscar o filmes. Para buscar, insira o título do filme
-          desejado em clique em buscar.
-        </p>
+    <div className="main-container">
+      <div className="page">
+        <Header />
+        <div className="content">
+          <p>
+            Discover movies by entering their titles. Simply type the title
+            you're interested in and click 'search' to get started.
+          </p>
+        </div>
+        <MovieSearch />
       </div>
-      <MovieSearch />
       <Footer />
     </div>
   );
