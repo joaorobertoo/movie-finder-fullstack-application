@@ -5,7 +5,7 @@ To run, please download, open and run both projects separately. They run in node
 
 ->BACKEND
 
--create a .env file at the root file(copy the .env.example) and paste your generated key from omdbapi
+-create a .env file at the root file(copy the .env.example) and paste your generated key from omdbapi in place of the '?' placeholder
 
 -run command in terminal: yarn start:dev
 
